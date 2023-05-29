@@ -1,0 +1,39 @@
+Start array: empty array
+K = 12
+Rotated array: empty array
+
+Start array: 721
+K = 7
+Rotated array: 721
+
+Start array: empty array
+K = 4
+Rotated array: empty array
+
+Start array: 556,733,288,-226,-261
+K = 2
+Rotated array: -226,-261,556,733,288
+
+Start array: 352,-958,-732,-22,-768,821,-689
+K = 4
+Rotated array: -22,-768,821,-689,352,-958,-732
+
+Start array: 673,-936,960,734,-672,-590,924,-191
+K = 7
+Rotated array: -936,960,734,-672,-590,924,-191,673
+
+Start array: 325,-903,-372,-683,866
+K = 9
+Rotated array: -903,-372,-683,866,325
+
+Start array: -300,552,-985,725,862,-508,-793,-893
+K = 11
+Rotated array: -508,-793,-893,-300,552,-985,725,862
+
+Start array: -109,621,900,-40,-54
+K = 14
+Rotated array: 621,900,-40,-54,-109
+
+Start array: -60,-316,-345,-185,53,-437,224,481
+K = 13
+Rotated array: -185,53,-437,224,481,-60,-316,-345

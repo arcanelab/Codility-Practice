@@ -3,9 +3,10 @@ public class BinaryGapSolver
 {
     public static void Main()
     {
+        var randomGenerator = new Random();
         for (int i = 0; i < 10; i++)
         {
-            int number = Math.Abs(new Random().Next());
+            int number = Math.Abs(randomGenerator.Next());
             int lbg = CalculateLongestBinaryGap(number);
             Console.WriteLine($"{Convert.ToString(number, 2)} = {lbg}");
         }

@@ -7,8 +7,8 @@ public class BinaryGapSolver
         for (int i = 0; i < 10; i++)
         {
             int number = Math.Abs(randomGenerator.Next());
-            int lbg = CalculateLongestBinaryGap(number);
-            Console.WriteLine($"{Convert.ToString(number, 2)} = {lbg}");
+            int longestBinaryGap = CalculateLongestBinaryGap(number);
+            Console.WriteLine($"{Convert.ToString(number, 2)} = {longestBinaryGap}");
         }
     }
 
@@ -21,21 +21,15 @@ public class BinaryGapSolver
 
         for (int i = 0; i < bits; i++)
         {
-            // lSB = least significant bit
-            bool LSB = ((number >> i) & 1) == 1;
-
-            if (LSB)
+            if (((number >> i) & 1) == 1)
             {
                 counting = true;
                 longestBinaryGap = Math.Max(longestBinaryGap, currentBinaryGap);
                 currentBinaryGap = 0;
             }
-            else
+            else if (counting)
             {
-                if (counting)
-                {
-                    currentBinaryGap++;
-                }
+                currentBinaryGap++;
             }
         }
 
